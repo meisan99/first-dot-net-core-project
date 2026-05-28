@@ -1,0 +1,47 @@
+GET http://localhost:5143/games
+
+###
+GET http://localhost:5143/games/1
+
+###
+POST http://localhost:5143/games/
+Content-Type: application/json
+
+{
+    "name": "Hades",
+    "genreId": 6,
+    "price": 24.99,
+    "releaseDate": "2020-09-17"
+}
+
+###
+POST http://localhost:5143/games/
+Content-Type: application/json
+
+{
+    "name": "Street Fighter V",
+    "genreId": 1,
+    "price": 24.99,
+    "releaseDate": "2020-12-17"
+}
+
+
+###
+PUT http://localhost:5143/games/1
+Content-Type: application/json
+
+{
+    "name": "The Legend of Zelda: Breath of the Wild",
+    "genreId": 1,
+    "price": 49.99,
+    "releaseDate": "2017-03-03"
+}
+
+###
+DELETE http://localhost:5143/games/3
+
+### Genres
+GET http://localhost:5143/genres
+
+###
+GET http://localhost:5143/genres/1
